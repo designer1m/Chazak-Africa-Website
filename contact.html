@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chazak Africa - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts for Roboto (matching BibleProject’s clean, modern typography) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://i.ibb.co/fzW3rgmj/Whats-App-Image-2025-02-26-at-18-36-28-c3db136a-removebg-preview.png" alt="Chazak Africa Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search Chazak Africa..." class="search-input">
+                <button id="search-button" class="search-button"><i class="fas fa-search"></i></button>
+                <div id="search-results" class="search-results"></div>
+            </div>
+            <div class="nav-icons">
+                <a href="bible-verses.html" class="icon"><i class="fas fa-book-open"></i></a>
+                <a href="#" class="icon"><i class="fas fa-globe"></i></a>
+                <a href="#" class="icon"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </header>
+
+    <!-- Sliding Sidebar for Mobile Toggle Menu -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-header">
+                <h2>Chazak Africa</h2>
+                <span class="close-sidebar" id="close-sidebar">×</span>
+            </div>
+            <ul class="sidebar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="sidebar-icons">
+                <a href="bible-verses.html" class="icon"><i class="fas fa-book-open"></i></a>
+                <a href="#" class="icon"><i class="fas fa-globe"></i></a>
+                <a href="#" class="icon"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section for Contact (Inspired by Chazak Africa’s Style and BibleProject) -->
+    <section class="hero-contact">
+        <div class="hero-content">
+            <img src="https://i.ibb.co/fzW3rgmj/Whats-App-Image-2025-02-26-at-18-36-28-c3db136a-removebg-preview.png" alt="Chazak Africa Logo" class="hero-logo">
+            <h1>Contact Chazak Africa</h1>
+            <h2>Get in Touch to Support Our Mission</h2>
+            <p>Reach out to us for inquiries, partnerships, or to join our mission of empowering children through the Bible.</p>
+            <a href="#contact-details" class="cta-button">Contact Us Now</a>
+        </div>
+    </section>
+
+    <!-- Contact Content Section (Inspired by Chazak Africa’s Professional Style) -->
+    <section class="contact-content" id="contact-details">
+        <div class="contact-container">
+            <h2>Connect With Us</h2>
+            <p>We’d love to hear from you! Use the form below to get in touch, or contact us directly using the information provided.</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone"></i> <a href="https://wa.me/254713736233" target="_blank">+254 713 736 233</a> (WhatsApp)</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@chazakafrica.com">info@chazakafrica.com</a></li>
+                        <li><i class="fas fa-globe"></i> <a href="http://chazakafrica.com/" target="_blank">chazakafrica.com</a></li>
+                    </ul>
+                    <p>Follow us on social media for updates and opportunities to engage:</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <h3>Our Location</h3>
+                    <div id="map" style="height: 400px; width: 100%; border-radius: 15px;"></div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Name *</label>
+                            <input type="text" id="contact-name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email *</label>
+                            <input type="email" id="contact-email" name="email" required placeholder="Your email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject *</label>
+                            <input type="text" id="contact-subject" name="subject" required placeholder="Subject of your message">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" name="message" required placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section (Updated to Match Header Colors) -->
+    <footer class="stunning-footer">
+        <div class="footer-content">
+            <div class="footer-section logo-section">
+                <img src="https://i.ibb.co/fzW3rgmj/Whats-App-Image-2025-02-26-at-18-36-28-c3db136a-removebg-preview.png" alt="Chazak Africa Logo" class="footer-logo">
+                <p>Empowering Children Through the Bible</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Get Involved</h3>
+                <ul>
+                    <li><a href="support.html#support-options">Support Us</a></li>
+                    <li><a href="resources.html">Shop Now</a></li>
+                    <li><a href="support.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Receive Chazak Africa Updates</h3>
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">→</button>
+                </form>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Chazak Africa. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Google Maps Initialization
+        function initMap() {
+            const chazakAfricaLocation = { lat: -1.286389, lng: 36.817223 }; // Example coordinates for Nairobi, Kenya (update with your actual location)
+            const map = new google.maps.Map(document.getElementById('map'), {
+                center: chazakAfricaLocation,
+                zoom: 15
+            });
+            new google.maps.Marker({
+                position: chazakAfricaLocation,
+                map: map,
+                title: 'Chazak Africa'
+            });
+        }
+    </script>
+</body>
+</html>

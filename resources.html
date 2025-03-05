@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chazak Africa - Resources</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://i.ibb.co/fzW3rgmj/Whats-App-Image-2025-02-26-at-18-36-28-c3db136a-removebg-preview.png" alt="Chazak Africa Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search Chazak Africa..." class="search-input">
+                <button id="search-button" class="search-button"><i class="fas fa-search"></i></button>
+                <div id="search-results" class="search-results"></div>
+            </div>
+            <div class="nav-icons">
+                <a href="bible-verses.html" class="icon"><img src="https://i.ibb.co/xqw7n4zw/22633-200.png" alt="Bible Verses" class="bible-icon"></a>
+                <a href="#" class="icon"><i class="fas fa-globe"></i></a>
+                <a href="#" class="icon"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section for Resources -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Chazak Africa Resources</h1>
+            <h2>Explore Our Bible-Based Materials for Children</h2>
+            <p>Discover our best-selling workbooks, curriculum, coloring books, and stories to inspire faith in kids across Africa.</p>
+            <a href="#resources" class="cta-button">Browse All Resources</a>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources" id="resources">
+        <h2>Our Best-Selling Bible Resources</h2>
+        <div class="resource-grid">
+            <!-- Bible Activity Workbook (The Genesis Project) -->
+            <div class="resource-card" id="workbook">
+                <img src="https://i.ibb.co/Z6PrNpBC/The-Genesis-Project.jpg" alt="The Genesis Project">
+                <h3>The Genesis Project</h3>
+                <p>Embark on a transformative journey with 'The Genesis Project,' a Bible Activity Workbook filled with engaging Bible stories, application questions, puzzles, and activities designed to disciple children. Perfect for Sunday schools, churches, and homes, this resource fosters intentional engagement with Scripture for $10.</p>
+                <button class="details-button" onclick="openPopup('workbook')">View Details</button>
+            </div>
+
+            <!-- Customized Bible Activity Workbook (The Son of Favor) -->
+            <div class="resource-card" id="custom-workbook">
+                <img src="https://i.ibb.co/tTg2TzbZ/The-Son-of-Favor.jpg" alt="The Son of Favor">
+                <h3>The Son of Favor</h3>
+                <p>'The Son of Favor' is a Customized Bible Activity Workbook that connects seamlessly to specific Bible curricula used by churches or schools, helping children engage effectively and intentionally with Bible lessons. Tailored for spiritual growth, this special textbook is available for $12, ideal for targeted discipleship.</p>
+                <button class="details-button" onclick="openPopup('custom-workbook')">View Details</button>
+            </div>
+
+            <!-- Bible Curriculum (The Friend of Abraham) -->
+            <div class="resource-card" id="curriculum">
+                <img src="https://i.ibb.co/7dSxZS9y/The-Friend-of-Abraham.jpg" alt="The Friend of Abraham">
+                <h3>The Friend of Abraham</h3>
+                <p>'The Friend of Abraham' is a Custom Bible Curriculum designed to assist Children’s Church workers and teachers in delivering intentional Sunday Bible lessons. With customizable content tailored to your church or school’s needs, this resource ensures impactful teaching for $15, fostering deep biblical understanding.</p>
+                <button class="details-button" onclick="openPopup('curriculum')">View Details</button>
+            </div>
+
+            <!-- Bible Coloring Books (The Genesis Project Coloring Book) -->
+            <div class="resource-card" id="coloring">
+                <img src="https://i.ibb.co/KzycBSh7/The-Genesis-Project-Coloring-Book.jpg" alt="The Genesis Project Coloring Book">
+                <h3>The Genesis Project Coloring Book</h3>
+                <p>'The Genesis Project Coloring Book' features vibrant illustrations of Bible stories, perfect for kids to enjoy as a follow-up activity in church, schools, or at home. This engaging resource, priced at $8, encourages creative interaction with Scripture, enhancing children’s spiritual journey.</p>
+                <button class="details-button" onclick="openPopup('coloring')">View Details</button>
+            </div>
+
+            <!-- Bible Stories (The Heart of Courage) -->
+            <div class="resource-card" id="stories">
+                <img src="https://i.ibb.co/G4XrMY72/The-Heart-of-Courage-7.jpg" alt="The Heart of Courage">
+                <h3>The Heart of Courage</h3>
+                <p>'The Heart of Courage' is a special themed Bible Stories book for kids, featuring inspiring tales of David, Mary, Joshua, and Esther. Designed for school libraries, this resource, priced at $12, instills courage and faith, making it an excellent addition to any child’s reading collection.</p>
+                <button class="details-button" onclick="openPopup('stories')">View Details</button>
+            </div>
+
+            <!-- Christian Religious Education Textbooks (The First Family) -->
+            <div class="resource-card" id="cre-textbook">
+                <img src="https://i.ibb.co/ym1nh8H5/The-First-Family.jpg" alt="The First Family">
+                <h3>The First Family</h3>
+                <p>'The First Family' is a Christian Religious Education (CRE) Textbook focused on helping students interact personally with the Bible, tailored to their cultural context. This innovative resource, priced at $14, encourages deep, meaningful engagement with Scripture for classroom use.</p>
+                <button class="details-button" onclick="openPopup('cre-textbook')">View Details</button>
+            </div>
+
+            <!-- Special Themed Book (My God, My Country, and Myself) -->
+            <div class="resource-card" id="special-book">
+                <img src="https://i.ibb.co/WN1QnB8g/My-God-My-Country-and-Myself.jpg" alt="My God, My Country, and Myself">
+                <h3>My God, My Country, and Myself</h3>
+                <p>'My God, My Country, and Myself' is a special themed Bible storybook that explores faith, identity, and community through captivating narratives for children. Priced at $13, this book is ideal for school libraries and home reading, fostering spiritual growth and cultural connection.</p>
+                <button class="details-button" onclick="openPopup('special-book')">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popups for Each Book -->
+    <div id="workbook-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup('workbook')">×</span>
+            <h2>The Genesis Project</h2>
+            <p>Embark on a transformative journey with 'The Genesis Project,' a Bible Activity Workbook filled with engaging Bible stories, application questions, puzzles, and activities designed to disciple children. Perfect for Sunday schools, churches, and homes, this resource fosters intentional engagement with Scripture. Available in print and digital formats for $10.</p>
+            <button class="purchase-button">Purchase Now</button>
+        </div>
+    </div>
+
+    <div id="custom-workbook-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup('custom-workbook')">×</span>
+            <h2>The Son of Favor</h2>
+            <p>'The Son of Favor' is a Customized Bible Activity Workbook that connects seamlessly to specific Bible curricula used by churches or schools, helping children engage effectively and intentionally with Bible lessons. Tailored for spiritual growth, this special textbook is available in print and digital formats for $12, ideal for targeted discipleship.</p>
+            <button class="purchase-button">Purchase Now</button>
+        </div>
+    </div>
+
+    <div id="curriculum-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup('curriculum')">×</span>
+            <h2>The Friend of Abraham</h2>
+            <p>'The Friend of Abraham' is a Custom Bible Curriculum designed to assist Children’s Church workers and teachers in delivering intentional Sunday Bible lessons. With customizable content tailored to your church or school’s needs, this resource ensures impactful teaching. Available in print and digital formats for $15, perfect for fostering deep biblical understanding.</p>
+            <button class="purchase-button">Purchase Now</button>
+        </div>
+    </div>
+
+    <div id="coloring-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup('coloring')">×</span>
+            <h2>The Genesis Project Coloring Book</h2>
+            <p>'The Genesis Project Coloring Book' features vibrant illustrations of Bible stories, perfect for kids to enjoy as a follow-up activity in church, schools, or at home. This engaging resource encourages creative interaction with Scripture, enhancing children’s spiritual journey. Available for $8 in print format.</p>
+            <button class="purchase-button">Purchase Now</button>
+        </div>
+    </div>
+
+    <div id="stories-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup('stories')">×</span>
+            <h2>The Heart of Courage</h2>
+            <p>'The Heart of Courage' is a special themed Bible Stories book for kids, featuring inspiring tales of David, Mary, Joshua, and Esther. Designed for school libraries, this resource instills courage and faith, making it an excellent addition to any child’s reading collection. Available for $12 in print format.</p>
+            <button class="purchase-button">Purchase Now</button>
+        </div>
+    </div>
+
+    <div id="cre-textbook-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup('cre-textbook')">×</span>
+            <h2>The First Family</h2>
+            <p>'The First Family' is a Christian Religious Education (CRE) Textbook focused on helping students interact personally with the Bible, tailored to their cultural context. This innovative resource encourages deep, meaningful engagement with Scripture for classroom use. Available for $14 in print and digital formats.</p>
+            <button class="purchase-button">Purchase Now</button>
+        </div>
+    </div>
+
+    <div id="special-book-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup('special-book')">×</span>
+            <h2>My God, My Country, and Myself</h2>
+            <p>'My God, My Country, and Myself' is a special themed Bible storybook that explores faith, identity, and community through captivating narratives for children. Ideal for school libraries and home reading, this resource fosters spiritual growth and cultural connection. Available for $13 in print format.</p>
+            <button class="purchase-button">Purchase Now</button>
+        </div>
+    </div>
+
+    <!-- Footer Section (Updated to Match Header Colors) -->
+    <footer class="stunning-footer">
+        <div class="footer-content">
+            <div class="footer-section logo-section">
+                <img src="https://i.ibb.co/fzW3rgmj/Whats-App-Image-2025-02-26-at-18-36-28-c3db136a-removebg-preview.png" alt="Chazak Africa Logo" class="footer-logo">
+                <p>Empowering Children Through the Bible</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="bible-verses.html">Bible Verses</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Get Involved</h3>
+                <ul>
+                    <li><a href="support.html#contact">Contact Us</a></li>
+                    <li><a href="resources.html">Shop Now</a></li>
+                    <li><a href="support.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Receive Chazak Africa Updates</h3>
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">→</button>
+                </form>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Chazak Africa. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

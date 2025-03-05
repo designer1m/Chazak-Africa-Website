@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chazak Africa - Empowering Children Through the Bible</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section (Updated for Sliding Toggle Menu Inspired by BibleProject) -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://i.ibb.co/fzW3rgmj/Whats-App-Image-2025-02-26-at-18-36-28-c3db136a-removebg-preview.png" alt="Chazak Africa Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search Chazak Africa..." class="search-input">
+                <button id="search-button" class="search-button"><i class="fas fa-search"></i></button>
+                <div id="search-results" class="search-results"></div>
+            </div>
+            <div class="nav-icons">
+                <a href="bible-verses.html" class="icon"><img src="https://i.ibb.co/xqw7n4zw/22633-200.png" alt="Bible Verses" class="bible-icon"></a>
+                <a href="#" class="icon"><i class="fas fa-globe"></i></a>
+                <a href="#" class="icon"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </header>
+
+    <!-- Sliding Sidebar for Mobile Toggle Menu -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-header">
+                <h2>Chazak Africa</h2>
+                <span class="close-sidebar" id="close-sidebar">×</span>
+            </div>
+            <ul class="sidebar-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+            <div class="sidebar-icons">
+                <a href="bible-verses.html" class="icon"><img src="https://i.ibb.co/xqw7n4zw/22633-200.png" alt="Bible Verses" class="bible-icon"></a>
+                <a href="#" class="icon"><i class="fas fa-globe"></i></a>
+                <a href="#" class="icon"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Body Section (Unchanged, Consistent with BibleProject) -->
+    <main>
+        <!-- Hero Section (Consistent Design: Dark Background, Slogan Only) -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>CHAZAK AFRICA</h1>
+                <h2>Your satisfaction is the reason we exist.</h2>
+                <p>Explore our world-class Bible resources to inspire and disciple kids across Africa and beyond.</p>
+                <a href="resources.html" class="cta-button">Explore Resources</a>
+            </div>
+        </section>
+
+        <!-- Latest Resources Section (Unchanged, Matches Your Screenshot) -->
+        <section class="latest-resources-section">
+            <div class="resources-header">
+                <h2>Latest Resources</h2>
+            </div>
+            <div class="latest-grid" id="latest-resources">
+                <!-- Resources will be dynamically inserted here via JavaScript (three specific books, image and title only) -->
+            </div>
+            <div class="explore-more-container">
+                <a href="resources.html" class="explore-more-button">Explore More</a>
+            </div>
+        </section>
+
+        <!-- Mission and Values Section (Consistent Design: Dark Background with Colorful Cards) -->
+        <section class="mission-section">
+            <div class="mission-content">
+                <img src="https://i.ibb.co/fzW3rgmj/Whats-App-Image-2025-02-26-at-18-36-28-c3db136a-removebg-preview.png" alt="Chazak Africa Logo" class="mission-logo">
+                <h1>Our Mission is to Help People Experience the Bible as a Unified Story That Leads to Jesus</h1>
+                <div class="mission-grid">
+                    <div class="mission-card" style="background-color: #6d4c41;">
+                        <h3>Our Mission</h3>
+                        <p>To help people experience a unified story that leads to Jesus, providing high-quality, intentional, and transformative Bible resources for children’s discipleship across Africa and beyond.</p>
+                        <button class="more-details-button" onclick="openPopup('mission')">More Details</button>
+                    </div>
+                    <div class="mission-card" style="background-color: #3f51b5;">
+                        <h3>What is Chazak Africa?</h3>
+                        <p>Chazak Africa is a strategic Christian literature resource company dedicated to transforming and discipling Africa for Christ through world-class resources for kids.</p>
+                        <button class="more-details-button" onclick="openPopup('about')">More Details</button>
+                    </div>
+                    <div class="mission-card" style="background-color: #4caf50;">
+                        <h3>Core Values</h3>
+                        <p>Our core values guide our mission: Efficiency, Accountability, Proactive, Creativity, Innovation, and Hard Work.</p>
+                        <button class="more-details-button" onclick="openPopup('values')">More Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section (Consistent Design: Light Background with Button) -->
+        <section class="cta-section">
+            <h1>We Believe That the Story of Jesus Has the Power to Transform People and Entire Communities</h1>
+            <p>Your generous support helps us continue making biblical resources for our growing audience across Africa.</p>
+            <a href="support.html" class="cta-button-large">Support Chazak Africa</a>
+        </section>
+    </main>
+
+    <!-- Popups for Mission, About, and Values -->
+    <div id="mission-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup('mission')">×</span>
+            <h2>Our Mission</h2>
+            <p>To help people experience a unified story that leads to Jesus, providing high-quality, intentional, and transformative Bible resources for children’s discipleship across Africa and beyond. Our mission drives us to create resources that foster faith, engage kids creatively, and support educators in discipling the next generation effectively.</p>
+        </div>
+    </div>
+
+    <div id="about-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup('about')">×</span>
+            <h2>What is Chazak Africa?</h2>
+            <p>Chazak Africa is a strategic Christian literature resource company dedicated to transforming and discipling Africa for Christ through world-class resources for kids. We aim to meet the needs of churches, schools, and families with affordable, impactful materials that inspire faith and spiritual growth, tailored to the African context.</p>
+        </div>
+    </div>
+
+    <div id="values-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup('values')">×</span>
+            <h2>Core Values</h2>
+            <ul class="values-list">
+                <li>Efficiency: We optimize our processes to deliver timely, high-quality resources.</li>
+                <li>Accountability: We take responsibility for our commitments and outcomes.</li>
+                <li>Proactive: We anticipate needs and innovate proactively to meet them.</li>
+                <li>Creativity: We design engaging, imaginative materials that captivate children.</li>
+                <li>Innovation: We continuously improve our resources to stay ahead in children’s ministry.</li>
+                <li>Hard Work: We dedicate ourselves fully to transforming lives through Scripture.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Popups for Latest Resources (Books, Triggered by Clicking Image or Title) -->
+    <div id="genesis-project-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup('genesis-project')">×</span>
+            <h2>The Genesis Project</h2>
+            <p>A Bible Activity Workbook with engaging Bible stories, puzzles, and activities for kids’ discipleship, designed for junior kids (ages 3-10). Price: $10. Available now on our Resources page. Includes stories like 'First Family,' 'Cain and Abel,' and 'Fall of Man.'</p>
+        </div>
+    </div>
+
+    <div id="son-of-favor-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup('son-of-favor')">×</span>
+            <h2>The Son of Favor</h2>
+            <p>A Searchlight Bible Activity Workbook with stories of Joseph, engaging junior kids (ages 7-10). Price: $12. Available on our Resources page. Perfect for interactive learning and discipleship, featuring vibrant illustrations and activities.</p>
+        </div>
+    </div>
+
+    <div id="friend-of-abraham-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup('friend-of-abraham')">×</span>
+            <h2>The Friend of Abraham</h2>
+            <p>A Custom Bible Curriculum for intentional Sunday lessons, tailored for churches and schools, focusing on Abraham’s story. Price: $15. Explore more on our Resources page. Includes lesson plans, activities, and biblical insights for effective teaching.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section (Unchanged, Matching Header Colors) -->
+    <footer class="stunning-footer">
+        <div class="footer-content">
+            <div class="footer-section logo-section">
+                <img src="https://i.ibb.co/fzW3rgmj/Whats-App-Image-2025-02-26-at-18-36-28-c3db136a-removebg-preview.png" alt="Chazak Africa Logo" class="footer-logo">
+                <p>Empowering Children Through the Bible</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="bible-verses.html">Bible Verses</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Get Involved</h3>
+                <ul>
+                    <li><a href="support.html#contact">Contact Us</a></li>
+                    <li><a href="resources.html">Shop Now</a></li>
+                    <li><a href="support.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Receive Chazak Africa Updates</h3>
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">→</button>
+                </form>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Chazak Africa. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

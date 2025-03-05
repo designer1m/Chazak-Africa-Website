@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chazak Africa - Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts for Roboto (matching BibleProject’s clean, modern typography) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://i.ibb.co/fzW3rgmj/Whats-App-Image-2025-02-26-at-18-36-28-c3db136a-removebg-preview.png" alt="Chazak Africa Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search Chazak Africa..." class="search-input">
+                <button id="search-button" class="search-button"><i class="fas fa-search"></i></button>
+                <div id="search-results" class="search-results"></div>
+            </div>
+            <div class="nav-icons">
+                <a href="bible-verses.html" class="icon"><i class="fas fa-book-open"></i></a> <!-- Updated to Font Awesome icon for consistency -->
+                <a href="#" class="icon"><i class="fas fa-globe"></i></a>
+                <a href="#" class="icon"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </header>
+
+    <!-- Sliding Sidebar for Mobile Toggle Menu -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-header">
+                <h2>Chazak Africa</h2>
+                <span class="close-sidebar" id="close-sidebar">×</span>
+            </div>
+            <ul class="sidebar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+            <div class="sidebar-icons">
+                <a href="bible-verses.html" class="icon"><i class="fas fa-book-open"></i></a> <!-- Updated to Font Awesome icon for consistency -->
+                <a href="#" class="icon"><i class="fas fa-globe"></i></a>
+                <a href="#" class="icon"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section for Support (Inspired by BibleProject’s Give Page Header) -->
+    <section class="hero-support">
+        <div class="hero-content">
+            <img src="https://i.ibb.co/fzW3rgmj/Whats-App-Image-2025-02-26-at-18-36-28-c3db136a-removebg-preview.png" alt="Chazak Africa Logo" class="hero-logo">
+            <h1>Support Chazak Africa</h1>
+            <h2>Help Us Empower Children Through the Bible</h2>
+            <p>Your generous support transforms lives by providing Bible resources to children across Africa. Join us today!</p>
+            <a href="#support-options" class="cta-button">Get Involved Now</a>
+        </div>
+    </section>
+
+    <!-- Support Content Section (Inspired by BibleProject’s Clear, Engaging Layout) -->
+    <section class="support-content" id="support-options">
+        <div class="support-container">
+            <h2>How You Can Make a Difference</h2>
+            <p>Chazak Africa relies on your support to create and distribute world-class Bible resources for children’s discipleship. Every contribution helps us reach more kids, churches, and schools across Africa with the transformative power of Scripture.</p>
+
+            <div class="support-grid">
+                <div class="support-card">
+                    <h3>Purchase Resources</h3>
+                    <p>Buy our Bible workbooks, curriculum, and stories to support our mission and enrich children’s discipleship. Your purchase directly funds new resource development.</p>
+                    <a href="resources.html" class="nav-button">Shop Now</a>
+                </div>
+                <div class="support-card">
+                    <h3>Make a Donation</h3>
+                    <p>Your tax-deductible donation helps us create more resources, expand our reach, and train educators. Choose an amount below to contribute:</p>
+                    <div class="donation-options">
+                        <button class="donation-button" data-amount="25">Donate $25</button>
+                        <button class="donation-button" data-amount="50">Donate $50</button>
+                        <button class="donation-button" data-amount="100">Donate $100</button>
+                        <button class="donation-button custom-donation">Custom Amount</button>
+                    </div>
+                    <p class="donation-note">Your gift supports children’s discipleship and biblical education in Africa.</p>
+                </div>
+                <div class="support-card">
+                    <h3>Volunteer</h3>
+                    <p>Join our team to help distribute resources, lead workshops, or spread the Word in your community. Your time and passion can make a lasting impact.</p>
+                    <button class="nav-button volunteer-toggle" onclick="openPopup('volunteer')">Volunteer Now</button>
+                </div>
+            </div>
+
+            <h2>Our Impact</h2>
+            <p>Since our founding, Chazak Africa has reached over 500,000 children with our Bible resources, empowering churches and schools to disciple the next generation. Your support has helped us distribute workbooks, curriculum, and stories that bring Scripture to life for kids across Africa.</p>
+        </div>
+    </section>
+
+    <!-- Volunteer Popup -->
+    <div id="volunteer-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup('volunteer')">×</span>
+            <h2>Volunteer with Chazak Africa</h2>
+            <p>Fill out the form below to join our team and make a difference in children’s discipleship across Africa.</p>
+            <form class="volunteer-form" id="volunteer-form">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="Your email address">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" placeholder="City, Country">
+                </div>
+                <div class="form-group">
+                    <label for="skills">Skills/Interests *</label>
+                    <textarea id="skills" name="skills" required placeholder="Describe your skills or areas of interest (e.g., teaching, distribution, marketing)"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section (Updated to Match Header Colors) -->
+    <footer class="stunning-footer">
+        <div class="footer-content">
+            <div class="footer-section logo-section">
+                <img src="https://i.ibb.co/fzW3rgmj/Whats-App-Image-2025-02-26-at-18-36-28-c3db136a-removebg-preview.png" alt="Chazak Africa Logo" class="footer-logo">
+                <p>Empowering Children Through the Bible</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="bible-verses.html">Bible Verses</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Get Involved</h3>
+                <ul>
+                    <li><a href="support.html#support-options">Support Us</a></li>
+                    <li><a href="resources.html">Shop Now</a></li>
+                    <li><a href="support.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Receive Chazak Africa Updates</h3>
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">→</button>
+                </form>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Chazak Africa. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
